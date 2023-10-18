@@ -108,7 +108,7 @@ p {
 
 ul {
     font-size: 1.2rem;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-bottom: 3px;
 }
 
@@ -146,13 +146,12 @@ footer{
     background-color: #101010;
     height: 50px;
     text-align: center;
-
 }
 
 footer a {
     text-decoration: none;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     position: relative;
     top: 15px;
+    font-weight: 500;
 }
