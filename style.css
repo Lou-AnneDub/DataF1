@@ -10,7 +10,6 @@
 
 body{
     background-image: url(images/Maquette.png);
-    background-position: center;
     background-size: cover;
     
 }
@@ -45,3 +44,23 @@ p{
     margin-bottom: 20px;
     font-family: 'Montserrat',sans-serif;
 }
+
+.boutton{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button{
+    color: black;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #fdfaf5;
+    border: none;   
+    cursor: pointer;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
