@@ -11,7 +11,7 @@
 body{
     background-image: url(images/Maquette.png);
     background-size: cover;
-    
+    font-family: 'Montserrat',sans-serif;
 }
 
 header{
@@ -40,11 +40,16 @@ main{
     margin-top: 5%;
 }
 
-p{
+p {
     font-size: 1.3rem;
     margin-bottom: 20px;
-    font-family: 'Montserrat',sans-serif;
     font-size: 1.2rem;
+}
+
+ul {
+    font-size: 1.2rem;
+    margin-left: 40px;
+    margin-bottom: 3px;
 }
 
 .boutton{
@@ -54,7 +59,6 @@ p{
 
 button{
     color: black;
-    font-family: 'Montserrat',sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
@@ -66,5 +70,10 @@ button{
 
 button:hover{
     text-decoration: underline;
+}
 
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
