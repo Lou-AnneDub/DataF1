@@ -1,0 +1,578 @@
+[
+  {
+    "Annee": 2000,
+    "Place": 1,
+    "Pilote": "Michael Schumacher",
+    "Points": 108,
+    "nbr_GP_gagne": 9,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2000,
+    "Place": 2,
+    "Pilote": "Mika Häkkinen",
+    "Points": 89,
+    "nbr_GP_gagne": 4,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2000,
+    "Place": 3,
+    "Pilote": "David Coulthard",
+    "Points": 73,
+    "nbr_GP_gagne": 3,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2001,
+    "Place": 1,
+    "Pilote": "Michael Schumacher",
+    "Points": 123,
+    "nbr_GP_gagne": 9,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2001,
+    "Place": 2,
+    "Pilote": "David Coulthard",
+    "Points": 65,
+    "nbr_GP_gagne": 2,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2001,
+    "Place": 3,
+    "Pilote": "Rubens Barrichello",
+    "Points": 56,
+    "nbr_GP_gagne": 0,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2002,
+    "Place": 1,
+    "Pilote": "Michael Schumacher",
+    "Points": 144,
+    "nbr_GP_gagne": 11,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2002,
+    "Place": 2,
+    "Pilote": "Rubens Barrichello",
+    "Points": 77,
+    "nbr_GP_gagne": 4,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2002,
+    "Place": 3,
+    "Pilote": "Juan Pablo Montoya",
+    "Points": 50,
+    "nbr_GP_gagne": 0,
+    "ecuries": "Williams"
+  },
+  {
+    "Annee": 2003,
+    "Place": 1,
+    "Pilote": "Michael Schumacher",
+    "Points": 93,
+    "nbr_GP_gagne": 6,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2003,
+    "Place": 2,
+    "Pilote": "Kimi Räikkönen",
+    "Points": 91,
+    "nbr_GP_gagne": 1,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2003,
+    "Place": 3,
+    "Pilote": "Juan Pablo Montoya",
+    "Points": 82,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Williams"
+  },
+  {
+    "Annee": 2004,
+    "Place": 1,
+    "Pilote": "Michael Schumacher",
+    "Points": 148,
+    "nbr_GP_gagne": 13,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2004,
+    "Place": 2,
+    "Pilote": "Rubens Barrichello",
+    "Points": 114,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2004,
+    "Place": 3,
+    "Pilote": "Jenson Button",
+    "Points": 85,
+    "nbr_GP_gagne": 0,
+    "ecuries": "Honda"
+  },
+  {
+    "Annee": 2005,
+    "Place": 1,
+    "Pilote": "Fernando Alonso",
+    "Points": 133,
+    "nbr_GP_gagne": 7,
+    "ecuries": "Renault"
+  },
+  {
+    "Annee": 2005,
+    "Place": 2,
+    "Pilote": "Kimi Räikkönen",
+    "Points": 112,
+    "nbr_GP_gagne": 7,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2005,
+    "Place": 3,
+    "Pilote": "Michael Schumacher",
+    "Points": 62,
+    "nbr_GP_gagne": 1,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2006,
+    "Place": 1,
+    "Pilote": "Fernando Alonso",
+    "Points": 134,
+    "nbr_GP_gagne": 7,
+    "ecuries": "Renault"
+  },
+  {
+    "Annee": 2006,
+    "Place": 2,
+    "Pilote": "Michael Schumacher",
+    "Points": 121,
+    "nbr_GP_gagne": 7,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2006,
+    "Place": 3,
+    "Pilote": "Felipe Massa",
+    "Points": 80,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2007,
+    "Place": 1,
+    "Pilote": "Kimi Räikkönen",
+    "Points": 110,
+    "nbr_GP_gagne": 6,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2007,
+    "Place": 2,
+    "Pilote": "Lewis Hamilton",
+    "Points": 109,
+    "nbr_GP_gagne": 4,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2007,
+    "Place": 2,
+    "Pilote": "Fernando Alonso",
+    "Points": 109,
+    "nbr_GP_gagne": 4,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2008,
+    "Place": 1,
+    "Pilote": "Lewis Hamilton",
+    "Points": 98,
+    "nbr_GP_gagne": 5,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2008,
+    "Place": 2,
+    "Pilote": "Felipe Massa",
+    "Points": 97,
+    "nbr_GP_gagne": 6,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2008,
+    "Place": 3,
+    "Pilote": "Kimi Räikkönen",
+    "Points": 75,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2009,
+    "Place": 1,
+    "Pilote": "Jenson Button",
+    "Points": 95,
+    "nbr_GP_gagne": 5,
+    "ecuries": "Brawn"
+  },
+  {
+    "Annee": 2009,
+    "Place": 2,
+    "Pilote": "Sebastian Vettel",
+    "Points": 84,
+    "nbr_GP_gagne": 4,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2009,
+    "Place": 3,
+    "Pilote": "Rubens Barrichello",
+    "Points": 77,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Brawn"
+  },
+  {
+    "Annee": 2010,
+    "Place": 1,
+    "Pilote": "Sebastian Vettel",
+    "Points": 256,
+    "nbr_GP_gagne": 5,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2010,
+    "Place": 2,
+    "Pilote": "Fernando Alonso",
+    "Points": 252,
+    "nbr_GP_gagne": 5,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2010,
+    "Place": 3,
+    "Pilote": "Mark Webber",
+    "Points": 242,
+    "nbr_GP_gagne": 4,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2011,
+    "Place": 1,
+    "Pilote": "Sebastian Vettel",
+    "Points": 392,
+    "nbr_GP_gagne": 11,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2011,
+    "Place": 2,
+    "Pilote": "Jenson Button",
+    "Points": 270,
+    "nbr_GP_gagne": 3,
+    "ecuries": "McLaren"
+  },
+  {
+    "Annee": 2011,
+    "Place": 3,
+    "Pilote": "Mark Webber",
+    "Points": 258,
+    "nbr_GP_gagne": 1,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2012,
+    "Place": 1,
+    "Pilote": "Sebastian Vettel",
+    "Points": 281,
+    "nbr_GP_gagne": 5,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2012,
+    "Place": 2,
+    "Pilote": "Fernando Alonso",
+    "Points": 278,
+    "nbr_GP_gagne": 3,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2012,
+    "Place": 3,
+    "Pilote": "Kimi Räikkönen",
+    "Points": 207,
+    "nbr_GP_gagne": 1,
+    "ecuries": "Lotus"
+  },
+  {
+    "Annee": 2013,
+    "Place": 1,
+    "Pilote": "Sebastian Vettel",
+    "Points": 397,
+    "nbr_GP_gagne": 13,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2013,
+    "Place": 2,
+    "Pilote": "Fernando Alonso",
+    "Points": 242,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2013,
+    "Place": 3,
+    "Pilote": "Mark Webber",
+    "Points": 199,
+    "nbr_GP_gagne": 0,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2014,
+    "Place": 1,
+    "Pilote": "Lewis Hamilton",
+    "Points": 384,
+    "nbr_GP_gagne": 11,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2014,
+    "Place": 2,
+    "Pilote": "Nico Rosberg",
+    "Points": 317,
+    "nbr_GP_gagne": 5,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2014,
+    "Place": 3,
+    "Pilote": "Daniel Ricciardo",
+    "Points": 238,
+    "nbr_GP_gagne": 3,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2015,
+    "Place": 1,
+    "Pilote": "Lewis Hamilton",
+    "Points": 381,
+    "nbr_GP_gagne": 10,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2015,
+    "Place": 2,
+    "Pilote": "Nico Rosberg",
+    "Points": 322,
+    "nbr_GP_gagne": 6,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2015,
+    "Place": 3,
+    "Pilote": "Sebastian Vettel",
+    "Points": 278,
+    "nbr_GP_gagne": 3,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2016,
+    "Place": 1,
+    "Pilote": "Nico Rosberg",
+    "Points": 385,
+    "nbr_GP_gagne": 9,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2016,
+    "Place": 2,
+    "Pilote": "Lewis Hamilton",
+    "Points": 380,
+    "nbr_GP_gagne": 10,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2016,
+    "Place": 3,
+    "Pilote": "Daniel Ricciardo",
+    "Points": 256,
+    "nbr_GP_gagne": 1,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2017,
+    "Place": 1,
+    "Pilote": "Lewis Hamilton",
+    "Points": 363,
+    "nbr_GP_gagne": 9,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2017,
+    "Place": 2,
+    "Pilote": "Sebastian Vettel",
+    "Points": 317,
+    "nbr_GP_gagne": 5,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2017,
+    "Place": 3,
+    "Pilote": "Valtteri Bottas",
+    "Points": 305,
+    "nbr_GP_gagne": 3,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2018,
+    "Place": 1,
+    "Pilote": "Lewis Hamilton",
+    "Points": 408,
+    "nbr_GP_gagne": 11,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2018,
+    "Place": 2,
+    "Pilote": "Sebastian Vettel",
+    "Points": 320,
+    "nbr_GP_gagne": 5,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2018,
+    "Place": 3,
+    "Pilote": "Kimi Räikkönen",
+    "Points": 251,
+    "nbr_GP_gagne": 1,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2019,
+    "Place": 1,
+    "Pilote": "Lewis Hamilton",
+    "Points": 413,
+    "nbr_GP_gagne": 11,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2019,
+    "Place": 2,
+    "Pilote": "Valtteri Bottas",
+    "Points": 326,
+    "nbr_GP_gagne": 4,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2019,
+    "Place": 3,
+    "Pilote": "Max Verstappen",
+    "Points": 278,
+    "nbr_GP_gagne": 3,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2020,
+    "Place": 1,
+    "Pilote": "Lewis Hamilton",
+    "Points": 347,
+    "nbr_GP_gagne": 11,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2020,
+    "Place": 2,
+    "Pilote": "Valtteri Bottas",
+    "Points": 223,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2020,
+    "Place": 3,
+    "Pilote": "Max Verstappen",
+    "Points": 214,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2021,
+    "Place": 1,
+    "Pilote": "Max Verstappen",
+    "Points": "395,5",
+    "nbr_GP_gagne": 10,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2021,
+    "Place": 2,
+    "Pilote": "Lewis Hamilton",
+    "Points": "387,5",
+    "nbr_GP_gagne": 8,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2021,
+    "Place": 3,
+    "Pilote": "Valtteri Bottas",
+    "Points": 226,
+    "nbr_GP_gagne": 1,
+    "ecuries": "Mercedes"
+  },
+  {
+    "Annee": 2022,
+    "Place": 1,
+    "Pilote": "Max Verstappen",
+    "Points": 454,
+    "nbr_GP_gagne": 15,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2022,
+    "Place": 2,
+    "Pilote": "Charles Leclerc",
+    "Points": 308,
+    "nbr_GP_gagne": 3,
+    "ecuries": "Ferrari"
+  },
+  {
+    "Annee": 2022,
+    "Place": 3,
+    "Pilote": "Sergio Pérez",
+    "Points": 305,
+    "nbr_GP_gagne": 2,
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2023,
+    "Place": 1,
+    "Pilote": "Max Verstappen",
+    "Points": "",
+    "nbr_GP_gagne": "",
+    "ecuries": "Red Bull"
+  },
+  {
+    "Annee": 2023,
+    "Place": 2,
+    "Pilote": "",
+    "Points": "",
+    "nbr_GP_gagne": "",
+    "ecuries": ""
+  },
+  {
+    "Annee": 2023,
+    "Place": 3,
+    "Pilote": "",
+    "Points": "",
+    "nbr_GP_gagne": "",
+    "ecuries": ""
+  }
+]
