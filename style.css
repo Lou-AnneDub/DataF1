@@ -10,4 +10,38 @@
 
 body{
     background-image: url(images/Maquette.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+header{
+    text-align: center;
+}
+
+.feu{
+    margin-top: 5%;
+    width: 50%;
+    
+}
+
+h1{
+    font-family: 'Audiowide', sans-serif;
+    margin-top: 5%;
+    font-size: 3.5rem;
+}
+
+.drapeau{
+    margin-top: 5%;
+}
+
+main{
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-top: 5%;
+}
+
+p{
+    margin-bottom: 20px;
+    font-family: 'Montserrat',sans-serif;
 }
