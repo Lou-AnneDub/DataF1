@@ -1,6 +1,8 @@
 import gsap from 'gsap'
 
-gsap.from('.f1 .rond',{
-    opacity:0,
-    duration: 1.5,
+gsap.fromTo('.f1 .rond',{
+    opacity:0
+},{
+    opacity:1,
+    duration:2
 })
