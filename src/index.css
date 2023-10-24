@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: #dddddd;
+  font-family: Lora, sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+body :is(header, section, footer) {
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body :is(header, section, footer) > .content {
+  padding: 1rem;
+}
+
+.content {
+  --title-size: 64px;
+  --subtitle-size: 48px;
+  --text-size: 22px;
+  max-width: 1000px;
+}
+.content h1 {
+  margin-bottom: 0.2rem;
+  font-size: var(--title-size);
+  line-height: 1;
+}
+.content h2 {
+  line-height: 1;
+  font-size: var(--subtitle-size);
+}
+.content p {
+  font-size: var(--text-size);
+}
+
+.user {
+  border-radius: 200px;
+  border: thick solid #333;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tools img {
+  margin: 0.3rem;
+  max-width: 100px;
+}
