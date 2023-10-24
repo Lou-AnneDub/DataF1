@@ -9,9 +9,14 @@ gsap.from('header h1', {
     color:'red'
 })
 
-gsap.fromTo('.rond',{
-    opacity:1,
-},{
-    opacity:0,
-    duration:2
+const maTimeline = gsap.timeline({
+    defaults: {
+        opacity:0,
+        duration:1
+    }
 })
+    .to('.f11',{})
+    .to('.f22',{})
+    .to('.f33',{})
+    .to('.f44',{})
+    .to('.f55',{})
