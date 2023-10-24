@@ -8,3 +8,10 @@ gsap.from('header h1', {
     ease:'elastic',
     color:'red'
 })
+
+gsap.fromTo('.rond',{
+    opacity:1,
+},{
+    opacity:0,
+    duration:2
+})
