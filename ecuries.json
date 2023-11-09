@@ -258,11 +258,11 @@
     } ,
     {"name":"Ferrari",
       "rank":2,
-      "points":
+      "points":571
     },
     {"name":"Red Bull",
       "rank":3,
-      "points":
+      "points":419
     }
   ],
   "2019" : [
@@ -272,11 +272,11 @@
     } ,
     {"name":"Ferrari",
       "rank":2,
-      "points":
+      "points": 504
     },
     {"name":"Red Bull",
       "rank":3,
-      "points":
+      "points": 417
     }
   ],
   "2020" : [
@@ -286,11 +286,11 @@
     } ,
     {"name":"Red Bull",
       "rank":2,
-      "points":
+      "points":319
     },
     {"name":"McLaren",
       "rank":3,
-      "points":
+      "points":202
     }
   ],
   "2021" : [
@@ -300,11 +300,11 @@
     } ,
     {"name":"Red Bull",
       "rank":2,
-      "points":
+      "points":585
     },
     {"name":"Ferrari",
       "rank":3,
-      "points":
+      "points":323
     }
   ],
   "2022" : [
@@ -314,11 +314,11 @@
     } ,
     {"name":"Ferrari",
       "rank":2,
-      "points":
+      "points":554
     },
     {"name":"Mercedes",
       "rank":3,
-      "points":
+      "points":515
     }
   ],
   "2023" : [
