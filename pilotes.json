@@ -462,20 +462,20 @@
   "2023" : [
     {"name":"Max Verstappen",
       "rank":1,
-      "points":?,
-      "win_number": ?,
+      "points":0,
+      "win_number": 0,
       "team": "Red Bull"
     }, 
     {"name":"?",
       "rank":2,
-      "points":?,
-      "win_number": ?,
+      "points":0,
+      "win_number": 0,
       "team": "?"
     }, 
     {"name":"?",
       "rank":3,
-      "points":?,
-      "win_number": ?,
+      "points":0,
+      "win_number": 0,
       "team": "?"
     }
   ]
