@@ -3,13 +3,20 @@ d3.json("pilotes.json",function(data){
 
     var selectedYear = "2000";
 
+    /*test
     var hisogram=d3.hisogram()
         .value(function(d){
             return d[2];
         })
-        .thresholds(x.ticks(3));
+        .thresholds(x.ticks(3));*/
     
-    var barres = hisogram(data);
+
+    d3.select("#barres")
+        .data(data)
+        .join("rect")
+        .attr("width", 180)
+        .attr("height", d=> d.points)
+        .style("fill","blue");
 
     /*d3.select("#barres")
         .selectAll(".histo")
