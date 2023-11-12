@@ -142,6 +142,31 @@ h3 {
     margin-bottom: 40px;
 }
 
+
+/* .bar {
+    fill: rgb(84, 26, 191);
+} */
+
+.bar-text {
+
+text-anchor: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #101010;
     height: 50px;

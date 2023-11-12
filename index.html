@@ -55,13 +55,14 @@
         </div>
     
         <section class="graphiques">
-            <svg width="600px" height="475px" viewBox="-5 0 555 500">  
-                <rect x=0 y=0 width=590 height=475 fill="#ddd"/>
-
-                <g id="barres"></g>
-
-            </svg>
+            <svg width="600" height="500"></svg>
+            <div>
+                <button onclick="changeYear(-1)">Année précédente</button>
+                <span id="currentYear"></span>
+                <button onclick="changeYear(1)">Année suivante</button>
+            </div>
         </section>
+        
 
         <section>
             <h3>Explication des points</h3>
