@@ -12,8 +12,8 @@ d3.json("pilotes.json")
     function updateChart(yearData) {
 
       const colorScale = d3.scaleOrdinal()
-        .domain(["Ferrari", "McLaren", "Williams", "Renault", "Honda", "Red Bull", "Brawn", "Mercedes", "Lotus",  /* Ajoutez d'autres équipes ici */])
-        .range(["red", "orange", "darkblue", "blue", "lightgray", "rgb(84, 26, 191)", "yellowgreen", "rgb(53, 255, 221)", "rgb(250, 231, 137)"  /* Ajoutez d'autres couleurs ici */]);
+        .domain(["Ferrari", "McLaren", "Williams", "Renault", "Honda", "Red Bull", "Brawn", "Mercedes", "Lotus"])
+        .range(["#C70001", "#FF9100", "#1F54D2", "#04B0E8", "#BBBBBB", "#7A36D0", "#99D41B", "#00D0D2", "#F2CD18"]);
 
       const bars = g.selectAll(".bar")
           .data(yearData.pilotes);
@@ -37,9 +37,8 @@ d3.json("pilotes.json")
       text.join("text")
           .attr("class", "bar-text")
           .attr("x", function(d, i) { return i * (width / 3) + (width / 6); })
-          .attr("y", function(d) { return height; }) // Au bas du rectangle
+          .attr("y", function(d) { return height - 10; }) // Au bas du rectangle
           .text(function(d) { return d.rank; })
-          .attr("text-anchor", "middle"); // Centrer le texte horizontalement
       
       text.exit().remove();
       

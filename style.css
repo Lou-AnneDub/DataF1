@@ -39,6 +39,7 @@ header{
     background-color: black;
     border-radius: 9px;
     width: 6%;
+    min-width: 70px;
     height: 83%;
     position: absolute;
     top: 17%;
@@ -132,39 +133,60 @@ button:hover{
     text-decoration: underline;
 }
 
-h3 {
+h3, .bar-text {
     font-size: 1.4rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.last {
+
+.bar-text {
+    font-weight: 700;
+}
+
+.graphiques {
     margin-bottom: 40px;
 }
 
+.graphiques div{
+    text-align: center;
+}
 
-/* .bar {
-    fill: rgb(84, 26, 191);
-} */
+/* Navigation graphique*/
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 2px;
+    float: left;
+}
 
-.bar-text {
+#next{
+    transform: rotate(180deg);
+}
 
-text-anchor: middle;
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+
+#currentYear {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+.explication {
+    margin-bottom: 40px;
+}
 
 
 footer{
