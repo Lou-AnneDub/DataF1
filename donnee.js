@@ -49,7 +49,7 @@ d3.json("pilotes.json")
       nameText.join("text")
           .attr("class", "name-text")
           .attr("x", function(d, i) { return i * (width / 3) + (width / 6); })
-          .attr("y", function(d) { return height + 15; }) // Un peu en dessous du numéro du rang
+          .attr("y", function(d) { return height + 20; }) // Un peu en dessous du numéro du rang
           .text(function(d) { return d.name; })
           .attr("text-anchor", "middle"); // Centrer le texte horizontalement
       

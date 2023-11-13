@@ -140,9 +140,10 @@ h3, .bar-text {
 }
 
 
-.bar-text {
+.bar-text, .name-text {
     font-weight: 700;
 }
+
 
 .graphiques {
     margin-bottom: 40px;
