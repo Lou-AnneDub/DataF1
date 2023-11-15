@@ -155,6 +155,10 @@ button:hover{
     text-decoration: underline;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 h3, .bar-text {
     font-size: 1.4rem;
     margin-bottom: 20px;

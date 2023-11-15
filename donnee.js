@@ -183,4 +183,21 @@ function scriptTeams(){
     scriptPilotes();  // Appele la fonction scriptPilotes par défaut
     document.getElementById("pilotes").addEventListener("click", scriptPilotes);
     document.getElementById("teams").addEventListener("click", scriptTeams);
+
+    // Sélectionner les boutons
+    const pilotesButton = document.getElementById("pilotes");
+    const teamsButton = document.getElementById("teams");
+
+    // Souligner le bouton actif et désouligner l'autre
+    pilotesButton.addEventListener("click", function() {
+      scriptPilotes();
+      pilotesButton.classList.add("active");
+      teamsButton.classList.remove("active");
+    });
+
+    teamsButton.addEventListener("click", function() {
+      scriptTeams();
+      teamsButton.classList.add("active");
+      pilotesButton.classList.remove("active");
+    });
   });
