@@ -104,6 +104,7 @@ h1{
     font-size: 1rem;
     color: white;
     background-color: #000000;
+
 }
 
 #startAnimation:hover{
@@ -116,6 +117,7 @@ h1{
 .drapeau{
     margin-top: 5%;
 }
+
 
 main{
     padding-right: 20%;

@@ -200,4 +200,5 @@ function scriptTeams(){
       teamsButton.classList.add("active");
       pilotesButton.classList.remove("active");
     });
+
   });
