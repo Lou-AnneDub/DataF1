@@ -120,24 +120,26 @@ h1{
 
 
 main{
-    padding-right: 20%;
-    padding-left: 20%;
+    margin: auto;
+    width: 80%;
     margin-top: 5%;
 }
 
 p {
-    font-size: 1.3rem;
+    margin: auto;
+    width: 80%;
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
 ul {
     font-size: 1.2rem;
-    margin-left: 50px;
+    margin-left: 180px;
     margin-bottom: 3px;
 }
 
 .boutton{
+    margin-top: 40px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -161,12 +163,40 @@ button:hover{
     text-decoration: underline;
 }
 
-h3, .bar-text {
+.data {
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 160px auto 100px;  
+}
+
+#piloteImg {
+    width: 90%;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info p {
+    width: 200px;
+}
+
+.bar-text {
     font-size: 1.4rem;
     margin-bottom: 20px;
     text-align: center;
 }
-
 
 .bar-text, .name-text {
     font-weight: 700;
@@ -174,6 +204,8 @@ h3, .bar-text {
 
 
 .graphiques {
+    position: relative;
+    vertical-align:baseline;
     margin-bottom: 40px;
 }
 
@@ -213,6 +245,7 @@ h3, .bar-text {
 
 
 .explication {
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 

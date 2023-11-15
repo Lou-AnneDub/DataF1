@@ -58,19 +58,24 @@
         <button id="teams">Écuries</button>
         </div>
     
-        <section class="graphiques">
-            <svg width="600" height="500"></svg>
-            <div>
-                <button onclick="changeYear(-1)" id="prev"><span class="arrow"></span><span class="sr-only">Année précédente</span></button>
-                <span id="currentYear"></span>
-                <button onclick="changeYear(1)" id="next"><span class="arrow"></span><span class="sr-only">Année suivante</span></button>
+        <section class="data">
+            <div class="graphiques">
+                <svg width="600" height="500"></svg>
+                <div>
+                    <button onclick="changeYear(-1)" id="prev"><span class="arrow"></span><span class="sr-only">Année précédente</span></button>
+                    <span id="currentYear"></span>
+                    <button onclick="changeYear(1)" id="next"><span class="arrow"></span><span class="sr-only">Année suivante</span></button>
+                </div>
             </div>
-        </section>
-        <section class="info">
-            <img src="" alt="">
-            <h3>Michael <br> Schumacher</h3>
-            <p>Points :</p>
-            <p>Grand Prix Gagné :</p>
+            <div class="info">
+                <img src="./images/pilotes/Michael Schumacher-Ferrari.png" alt="" id="piloteImg">
+                <div>
+                    <h3>Michael <br> Schumacher</h3>
+                    <p>Points :
+                        <br>Grand Prix Gagné :</p>
+                </div>
+                <img src="" alt="">
+            </div>
         </section>
 
         <section class="explication">
