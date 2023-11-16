@@ -32,7 +32,6 @@ d3.json("pilotes.json")
       const bars = g.selectAll(".bar")
         .data(yearData.pilotes);
 
-
       bars.join("rect")
         .attr("class", "bar")
         .attr("x", function(d, i) { return i * (width / 3); })
@@ -45,9 +44,9 @@ d3.json("pilotes.json")
           const selectedPilote = yearData.pilotes[i];
           console.log(i)
           infoDiv.html(
-            "<img src='./images/pilotes/" + i.name + "-" + i.team + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + selectedPilote.points + "<br>Grand Prix Gagné : " + selectedPilote.win_number + "</p></div>" + "<img src='./images/logo/" + selectedPilote.team + ".png' alt='' id='logoImg'></img>"
+            "<img src='./images/pilotes/" + i.name + "-" + i.team + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Grand Prix Gagné : " + i.win_number + "</p></div>" + "<img src='./images/logo/" + i.team + ".png' alt='' id='logoImg'></img>"
           )
-      });
+        });
 
       bars.exit().remove();
 
@@ -141,6 +140,10 @@ function scriptTeams(){
           .join("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
   
+
+        // Constante pour récupérer la div où on affiche les infos sur les écuries
+        const infoDiv = d3.select(".info");
+        
         const bars = g.selectAll(".bar")
           .data(yearData.ecuries);
   
@@ -151,8 +154,14 @@ function scriptTeams(){
           .attr("height", function(d) { return d.points; })
           .attr("width", width / 3)
           .attr("fill", function(d) { return colorScale(d.name); })
-          .append("title")
-          .text(function(d) { return "Rank: " + d.rank; });
+          .on("click", function(d,i){
+            // Utilise l'index pour accéder aux données correctes
+            const selectedPilote = yearData.pilotes[i];
+            // Affiche les données
+            infoDiv.html(
+              "<img src='./images/logo/" + i.team + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Grand Prix Gagné : " + i.win_number + "</p></div>"
+            )
+          });
   
         bars.exit().remove();
   
