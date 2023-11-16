@@ -26,8 +26,12 @@ d3.json("pilotes.json")
         .join("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+      // Constante pour récupérer la div où on affiche les infos sur les pilotes
+      const infoDiv = d3.select(".info");
+      
       const bars = g.selectAll(".bar")
         .data(yearData.pilotes);
+
 
       bars.join("rect")
         .attr("class", "bar")
@@ -36,8 +40,14 @@ d3.json("pilotes.json")
         .attr("height", function(d) { return d.points; })
         .attr("width", width / 3)
         .attr("fill", function(d) { return colorScale(d.team); })
-        .append("title")
-        .text(function(d) { return "Rank: " + d.rank; });
+        .on("click", function(d,i){
+          // Utilise l'index pour accéder aux données correctes
+          const selectedPilote = yearData.pilotes[i];
+          console.log(i)
+          infoDiv.html(
+            "<img src='./images/pilotes/" + i.name + "-" + i.team + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + selectedPilote.points + "<br>Grand Prix Gagné : " + selectedPilote.win_number + "</p></div>" + "<img src='./images/logo/" + selectedPilote.team + ".png' alt='' id='logoImg'></img>"
+          )
+      });
 
       bars.exit().remove();
 
@@ -76,7 +86,9 @@ d3.json("pilotes.json")
         .attr("class", "f1Img")
         .attr("x", function(d, i) { return i * (width / 3) + (width / 6); })
         .attr("y", function(d) { return height-d.points; })
-        .attr("xlink:href", function(d) { return cheminImage+yearData.year+d.team+".png"; })
+        .attr("xlink:href", function(d) { return cheminImage+yearData.year+d.team+".png"; });
+
+      f1Photo.exit().remove();
 
       // Affichage de l'année actuelle
       d3.select("#currentYear").text("Année " + yearData.year);
