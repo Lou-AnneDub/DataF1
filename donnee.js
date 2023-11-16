@@ -66,6 +66,18 @@ d3.json("pilotes.json")
 
       nameText.exit().remove();
 
+      // Ajout de la f1 correspondante en haut de chaque rectangle
+      const f1Photo = g.selectAll(".f1Img")
+        .data(yearData.pilotes)
+
+      const cheminImage = "images/f1/";
+
+      f1Photo.join("img")
+        .attr("class", "f1Img")
+        .attr("x", function(d, i) { return i * (width / 3) + (width / 6); })
+        .attr("y", function(d) { return height-d.points; })
+        .attr("xlink:href", function(d) { return cheminImage+yearData.year+d.team+".png"; })
+
       // Affichage de l'année actuelle
       d3.select("#currentYear").text("Année " + yearData.year);
     }
@@ -144,7 +156,7 @@ function scriptTeams(){
   
         text.exit().remove();
   
-        // Ajout du nom du pilote au bas de chaque rectangle
+        // Ajout du nom de l'écurie au bas de chaque rectangle
         const nameText = g.selectAll(".name-text")
           .data(yearData.ecuries);
   
@@ -172,12 +184,23 @@ function scriptTeams(){
       };
   
       updateChart(data[currentYear]);
+
+      d3.select("svg")
+        .on("click", function(data){
+          d3.selectAll(".histobarre")
+          .style("opacity", 0.5)
+
+          d3.select(this)
+              .style("opacity",1)
+        });
+
     })
     .catch(function(error) {
       console.error("Erreur lors du chargement des données :", error);
     });
   
   }
+
 
   document.addEventListener("DOMContentLoaded", function() {
     scriptPilotes();  // Appele la fonction scriptPilotes par défaut
