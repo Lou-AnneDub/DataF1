@@ -92,25 +92,27 @@ h1{
     font-size: 4.5rem;
 }
 
+.son{
+    width: 30px;
+}
 
 #startAnimation{
     position: absolute; 
     bottom: 10px; 
-    right: 10px;
-    width: 90px;
+    right: 20px;
+    width: 60px;
     height: 60px;
     border-radius: 50px;
     padding: 10px;
-    font-size: 1rem;
-    color: white;
-    background-color: #000000;
+    background-color: #FDFAF5;
+    border: #101010 3px solid;
 
 }
 
 #startAnimation:hover{
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
+    /* background-color: #ffffff64; */
     transition: 0.3s ease-in-out;
+    transform: scale(1.2);
     
 }
 
