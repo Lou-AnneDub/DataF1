@@ -102,6 +102,21 @@ d3.json("pilotes.json")
       // Affichage de l'année actuelle
       d3.select("#currentYear").text("Année " + yearData.year);
 
+      // Affiche les infos du pilote par défaut
+      showDefaultInfo(yearData);
+
+    }
+
+    // Fonction pour sélectionné les données par défaut
+    function showDefaultInfo(yearData) {
+      const defaultPilote = yearData.pilotes.find(pilote => pilote.rank === 1);
+
+      const infoDiv = d3.select(".info");
+      infoDiv.html(
+        "<img src='./images/pilotes/" + defaultPilote.name + "-" + defaultPilote.team + ".png' alt='' id='piloteImg'>" +
+        "<div><h3>" + defaultPilote.name + "</h3><p>Points : " + defaultPilote.points + "<br>Grand Prix Gagné: " + defaultPilote.win_number + "</p></div>" +
+        "<img src='./images/logo/" + defaultPilote.team + ".png' alt='' id='logoImg'></img>"
+      );
     }
 
     window.changeYear = function(change) {
@@ -179,7 +194,7 @@ function scriptTeams(){
             const selectedEcuries = yearData.ecuries[i];
             // Affiche les données
             infoDiv.html(
-              "<img src='./images/logo/" + i.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Duo de pilotes : " + i.pilote1 + " et " + i.pilote2 + "</p></div>"
+              "<img src='./images/logo/" + i.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Duo de pilotes :<ul><li>" + i.pilote1 + "</li><li> " + i.pilote2 + "</li></ul></p></div>"
             )
           });
   
@@ -212,6 +227,19 @@ function scriptTeams(){
   
         // Affichage de l'année actuelle
         d3.select("#currentYear").text("Année " + yearData.year);
+
+        // Affiche les infos de l'écurie par défaut
+        showDefaultInfo(yearData);
+      }
+
+      // Fonction pour sélectionné les données par défaut
+      function showDefaultInfo(yearData) {
+        const defaultEcurie = yearData.ecuries.find(ecurie => ecurie.rank === 1);
+
+        const infoDiv = d3.select(".info");
+        infoDiv.html(
+          "<img src='./images/logo/" + defaultEcurie.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + defaultEcurie.name + "</h3><p>Points : " + defaultEcurie.points + "<br>Duo de pilotes :<ul><li>" + defaultEcurie.pilote1 + "</li><li> " + defaultEcurie.pilote2 + "</li></ul></p></div>"
+        );
       }
   
       window.changeYear = function(change) {
