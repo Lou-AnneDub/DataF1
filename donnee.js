@@ -156,10 +156,10 @@ function scriptTeams(){
           .attr("fill", function(d) { return colorScale(d.name); })
           .on("click", function(d,i){
             // Utilise l'index pour accéder aux données correctes
-            const selectedPilote = yearData.pilotes[i];
+            const selectedEcuries = yearData.ecuries[i];
             // Affiche les données
             infoDiv.html(
-              "<img src='./images/logo/" + i.team + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Grand Prix Gagné : " + i.win_number + "</p></div>"
+              "<img src='./images/logo/" + i.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "</p></div>"
             )
           });
   
