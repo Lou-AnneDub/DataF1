@@ -283,16 +283,16 @@ footer a {
 .mention{
     margin-left: 10%;
 }
+
 .credit-photo{
     display: flex;
-
 }
 
 h1.mention{
     margin-left: 5%;
     text-align: center;
     margin-top: 5%;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 .liste{
     font-size: 0.9rem;
