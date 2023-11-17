@@ -166,27 +166,29 @@ button:hover{
 }
 
 .data {
-    padding-left: 20px;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 10px;
 }
 
 .info {
+    width: 40%;
     display: grid;
-    grid-template-columns: 180px auto 130px;  
+    grid-template-columns: 130px auto 20%;  
 }
 
 #piloteImg {
-    width: 90%;
+    width: 130px;
 }
 
 #logoImg {
     width: 75%;
 }
+
 
 h3 {
     font-size: 1.6rem;
@@ -195,7 +197,7 @@ h3 {
 }
 
 .info p {
-    width: 200px;
+    width: 85%;
 }
 
 .bar-text {
@@ -208,11 +210,16 @@ h3 {
     font-weight: 700;
 }
 
+.f1Img {
+    width: 40%;
+}
+
 
 .graphiques {
     position: relative;
     vertical-align:baseline;
     margin-bottom: 40px;
+
 }
 
 .graphiques div{

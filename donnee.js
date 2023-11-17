@@ -16,7 +16,8 @@ d3.json("pilotes.json")
 
       // Ajuster la hauteur du SVG en fonction du maximum des points
       const svgHeight = maxPoints + margin.top + margin.bottom;
-      svg.attr("height", svgHeight);
+      svg.attr("height", svgHeight)
+        .attr("min-height", 300);
 
       const width = +svg.attr("width") - margin.left - margin.right;
       const height = svgHeight - margin.top - margin.bottom;
@@ -44,7 +45,7 @@ d3.json("pilotes.json")
           const selectedPilote = yearData.pilotes[i];
           console.log(i)
           infoDiv.html(
-            "<img src='./images/pilotes/" + i.name + "-" + i.team + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Grand Prix Gagné : " + i.win_number + "</p></div>" + "<img src='./images/logo/" + i.team + ".png' alt='' id='logoImg'></img>"
+            "<img src='./images/pilotes/" + i.name + "-" + i.team + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Grand Prix Gagné: " + i.win_number + "</p></div>" + "<img src='./images/logo/" + i.team + ".png' alt='' id='logoImg'></img>"
           )
         });
 
