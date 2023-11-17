@@ -29,10 +29,10 @@ header{
     background-color: black;
     border-radius: 9px;
     height: 36px;
-    width: 47%;
+    width: 48%;
     position: absolute;
     top: 16%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, 50%);
 }
 
