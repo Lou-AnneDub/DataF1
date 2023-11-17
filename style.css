@@ -219,7 +219,7 @@ h3 {
     position: relative;
     vertical-align:baseline;
     margin-bottom: 40px;
-
+    cursor: pointer;
 }
 
 .graphiques div{

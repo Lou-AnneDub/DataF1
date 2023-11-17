@@ -179,7 +179,7 @@ function scriptTeams(){
             const selectedEcuries = yearData.ecuries[i];
             // Affiche les données
             infoDiv.html(
-              "<img src='./images/logo/" + i.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "</p></div>"
+              "<img src='./images/logo/" + i.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Duo de pilotes : " + i.pilote1 + " et " + i.pilote2 + "</p></div>"
             )
           });
   
