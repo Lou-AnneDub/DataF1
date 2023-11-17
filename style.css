@@ -277,8 +277,29 @@ footer a {
     font-weight: 500;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* PAGE MENTIONS LEGALES */
+
+h1 {
+    margin-left: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#retour{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#retour:hover {
+    text-decoration: underline;
+}
 
 .mention{
     margin-left: 10%;
@@ -286,18 +307,9 @@ footer a {
 
 .credit-photo{
     display: flex;
+    margin-bottom: 30px;
 }
 
-h1.mention{
-    margin-left: 5%;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
 .liste{
     font-size: 0.9rem;
-}
-
-.margin-liste{
-    margin-bottom: 20px;
 }
