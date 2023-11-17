@@ -13,11 +13,13 @@ d3.json("pilotes.json")
 
       // Trouver le maximum des points pour l'année en cours
       const maxPoints = d3.max(yearData.pilotes, d => d.points);
+      const minHeight = 300;
 
       // Ajuster la hauteur du SVG en fonction du maximum des points
-      const svgHeight = maxPoints + margin.top + margin.bottom;
-      svg.attr("height", svgHeight)
-        .attr("min-height", 300);
+      const maxPointsWithImage = maxPoints + 110;
+      const svgHeight = maxPointsWithImage < minHeight ? minHeight : maxPointsWithImage;
+
+      svg.attr("height", svgHeight);
 
       const width = +svg.attr("width") - margin.left - margin.right;
       const height = svgHeight - margin.top - margin.bottom;
@@ -85,17 +87,18 @@ d3.json("pilotes.json")
 
       nameText.exit().remove();
 
-      // Ajout de la f1 correspondante en haut de chaque rectangle
       const f1Photo = g.selectAll(".f1Img")
-        .data(yearData.pilotes)
+        .data(yearData.pilotes);
 
       const cheminImage = "images/f1/";
 
-      f1Photo.join("img")
+      f1Photo.join("image")
         .attr("class", "f1Img")
-        .attr("x", function(d, i) { return i * (width / 3) + (width / 6); })
-        .attr("y", function(d) { return height-d.points; })
-        .attr("xlink:href", function(d) { return cheminImage+yearData.year+d.team+".png"; });
+        .attr("x", function(d, i) { return i * (width / 3) + (width / 6) - 120; })
+        .attr("y", function(d) { return height - d.points - 95; })
+        .attr("width", 100)
+        .attr("height", 100)
+        .attr("xlink:href", function(d) { return cheminImage + yearData.year + d.team + ".png"; });
 
       f1Photo.exit().remove();
 
