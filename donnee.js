@@ -40,6 +40,15 @@ d3.json("pilotes.json")
         .attr("height", function(d) { return d.points; })
         .attr("width", width / 3)
         .attr("fill", function(d) { return colorScale(d.team); })
+        //Effet d'opacité
+        .on("mouseover", function () {
+          d3.selectAll(".bar").attr("opacity", 0.7);
+          d3.select(this).attr("opacity", 1);
+        })
+        .on("mouseout", function () {
+          d3.selectAll(".bar").attr("opacity", 1);
+        })
+        //Affiche info Pilotes
         .on("click", function(d,i){
           // Utilise l'index pour accéder aux données correctes
           const selectedPilote = yearData.pilotes[i];
@@ -92,6 +101,7 @@ d3.json("pilotes.json")
 
       // Affichage de l'année actuelle
       d3.select("#currentYear").text("Année " + yearData.year);
+
     }
 
     window.changeYear = function(change) {
@@ -155,6 +165,15 @@ function scriptTeams(){
           .attr("height", function(d) { return d.points; })
           .attr("width", width / 3)
           .attr("fill", function(d) { return colorScale(d.name); })
+          //Effet d'opacité
+          .on("mouseover", function () {
+            d3.selectAll(".bar").attr("opacity", 0.7);
+            d3.select(this).attr("opacity", 1);
+          })
+          .on("mouseout", function () {
+            d3.selectAll(".bar").attr("opacity", 1);
+          })
+          //Affiche info Ecuries
           .on("click", function(d,i){
             // Utilise l'index pour accéder aux données correctes
             const selectedEcuries = yearData.ecuries[i];
