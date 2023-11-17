@@ -164,8 +164,8 @@ function scriptTeams(){
         const g = svg.selectAll("g")
           .data([null])
           .join("g")
-          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-  
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+          .attr("height", 250);
 
         // Constante pour récupérer la div où on affiche les infos sur les écuries
         const infoDiv = d3.select(".info");
