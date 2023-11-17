@@ -156,13 +156,18 @@ function scriptTeams(){
   
         // Trouver le maximum des points pour l'année en cours
         const maxPoints = d3.max(yearData.ecuries, d => d.points);
-  
+        const minHeight = 300;
+
         // Ajuster la hauteur du SVG en fonction du maximum des points
-        const svgHeight = maxPoints + margin.top + margin.bottom;
+        const maxPointsWithImage = maxPoints + 110;
+        const svgHeight = maxPointsWithImage < minHeight ? minHeight : maxPointsWithImage;
+
         svg.attr("height", svgHeight);
-  
+
         const width = +svg.attr("width") - margin.left - margin.right;
-        const height = svgHeight - margin.top - margin.bottom;
+        const height = svgHeight - margin.top - margin. bottom;
+        svg.attr("height", svgHeight);
+
   
         const g = svg.selectAll("g")
           .data([null])
@@ -228,6 +233,22 @@ function scriptTeams(){
   
         nameText.exit().remove();
   
+
+        const f1Photo = g.selectAll(".f1Img")
+        .data(yearData.ecuries);
+
+      const cheminImage = "images/f1/";
+
+      f1Photo.join("image")
+        .attr("class", "f1Img")
+        .attr("x", function(d, i) { return i * (width / 3) + (width / 6) - 120; })
+        .attr("y", function(d) { return height - d.points - 95; })
+        .attr("width", 100)
+        .attr("height", 100)
+        .attr("xlink:href", function(d) { return cheminImage + yearData.year + d.name + ".png"; });
+
+      f1Photo.exit().remove();
+
         // Affichage de l'année actuelle
         d3.select("#currentYear").text("Année " + yearData.year);
 
