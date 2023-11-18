@@ -117,7 +117,7 @@ d3.json("pilotes.json")
       const infoDiv = d3.select(".info");
       infoDiv.html(
         "<img src='./images/pilotes/" + defaultPilote.name + "-" + defaultPilote.team + ".png' alt='' id='piloteImg'>" +
-        "<div><h3>" + defaultPilote.name + "</h3><p>Points : " + defaultPilote.points + "<br>Grand Prix Gagné: " + defaultPilote.win_number + "</p></div>" +
+        "<div><h3>" + defaultPilote.name + "</h3><p>Points : " + defaultPilote.points + "<br>Grands Prix Gagnés: " + defaultPilote.win_number + "</p></div>" +
         "<img src='./images/logo/" + defaultPilote.team + ".png' alt='' id='logoImg'></img>"
       );
     }
