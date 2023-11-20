@@ -63,6 +63,7 @@ d3.json("pilotes.json")
         //Affiche une div avec des infos si l'année correspond à une année du tableau InfoBonus
         const InfoBonus={
           "2009":"Les pneus slick sont adopté par tout les écuries à partir de 2009, pour une meilleure adhérence mécanique.",
+          "2010":"Le système DRS, Système de Réduction de Traînée, est autorisé pour faciliter les dépassements en. Celui-ci est soumis à certaines règles. Le pilote qui l'utilise doit être à moins d'une seconde du pilote qui va être dépassé et le DRS est autorisé seulement dans certaines zones et selon les conditions.",
           "2018":"Un halo de sécurité a été ajouté à partir de 2018. Il permet de protéger le pilote en cas de retournement ou de choc frontal direct. Le halo est devenu obligatoire en F1 après de nombreux accidents et notament un accident qui à couté la vie à un pilote, Jules Bianchi, en 2015."
         };
 
