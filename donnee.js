@@ -60,6 +60,21 @@ d3.json("pilotes.json")
           )
         });
 
+        //Affiche une div avec des infos si l'année correspond à une année du tableau InfoBonus
+        const InfoBonus={
+          "2009":"Les pneus slick sont adopté par tout les écuries à partir de 2009, pour une meilleure adhérence mécanique.",
+          "2018":"Un halo de sécurité a été ajouté à partir de 2018. Il permet de protéger le pilote en cas de retournement ou de choc frontal direct. Le halo est devenu obligatoire en F1 après de nombreux accidents et notament un accident qui à couté la vie à un pilote, Jules Bianchi, en 2015."
+        };
+
+        const PopupText = d3.select(".InfoHover");
+        if (InfoBonus.hasOwnProperty(yearData.year.toString())) {
+          PopupText.html(
+            "<span id='Texthover'>"+ InfoBonus[yearData.year] + "</span><span>*Info Bonus*</span>"
+          );
+        } else {
+          PopupText.html("");
+        }
+
       bars.exit().remove();
 
       // Ajout du numéro de rang au bas de chaque rectangle
@@ -121,6 +136,8 @@ d3.json("pilotes.json")
         "<img src='./images/logo/" + defaultPilote.team + ".png' alt='' id='logoImg'></img>"
       );
     }
+
+
 
     window.changeYear = function(change) {
       currentYear += change;
@@ -205,8 +222,22 @@ function scriptTeams(){
               "<img src='./images/logo/" + i.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + i.name + "</h3><p>Points : " + i.points + "<br>Duo de pilotes :<ul><li>" + i.pilote1 + "</li><li> " + i.pilote2 + "</li></ul></p></div>"
             )
           });
+
+          bars.exit().remove();
+
+           //Affiche une div avec des infos si l'année correspond à une année du tableau InfoBonus
+          const InfoBonus={
+            "2009":"L'équipe Brawn GP, fondée en 2009 par Ross Brawn, a remporté le championnat du monde de Formule 1 cette année-là, après avoir racheté l'équipe Honda Racing qui était en difficulté. L’année suivante, elle a été racheté par Mercedes à cause de difficulté financière."
+          };
   
-        bars.exit().remove();
+          const PopupText = d3.select(".InfoHover");
+          if (InfoBonus.hasOwnProperty(yearData.year.toString())) {
+            PopupText.html(
+              "<span id='Texthover'>"+ InfoBonus[yearData.year] + "</span><span>*Info Bonus*</span>"
+            );
+          } else {
+            PopupText.html("");
+          }
   
         // Ajout du numéro de rang au bas de chaque rectangle
         const text = g.selectAll(".bar-text")
@@ -264,6 +295,7 @@ function scriptTeams(){
         infoDiv.html(
           "<img src='./images/logo/" + defaultEcurie.name + ".png' alt='' id='piloteImg'>" + "<div><h3>" + defaultEcurie.name + "</h3><p>Points : " + defaultEcurie.points + "<br>Duo de pilotes :<ul><li>" + defaultEcurie.pilote1 + "</li><li> " + defaultEcurie.pilote2 + "</li></ul></p></div>"
         );
+
       }
   
       window.changeYear = function(change) {
@@ -286,6 +318,7 @@ function scriptTeams(){
           d3.select(this)
               .style("opacity",1)
         });
+      
 
     })
     .catch(function(error) {
