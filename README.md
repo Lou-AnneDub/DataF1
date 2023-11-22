@@ -4,4 +4,4 @@ Notre projet de Dataviz se porte sur les vainqueurs du Championnat de Formale 1 
 
 Notre équipe est composée de Pauline GAZENGEL et de moi-même, Lou-Anne DUBILLE.
 
-Lien vers le site hébergé grâce à GitHub Pages :  https://lou-annedub.github.io/Dataviz/
+Lien vers le site hébergé grâce à GitHub Pages :  https://lou-annedub.github.io/DataF1/
